@@ -1,0 +1,13 @@
+<title>Asakusa.txt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;700&display=swap">
+<style>
+  /* single-look page: night-black ground, everything else is drawn in the character grid */
+  :root { --ink: #05040a; --paper: #e9e4d8; color-scheme: dark; }
+  html, body { height: 100%; margin: 0; background: var(--ink); color: var(--paper); overflow: hidden; }
+  body { touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; overscroll-behavior: none; }
+  #screen { position: fixed; inset: 0; width: 100vw; height: 100vh; height: 100dvh; display: block; background: var(--ink); }
+  @media (prefers-reduced-motion: reduce) { #screen { } }
+</style>
+<canvas id="screen" aria-label="Asakusa.txt, an ASCII night walk"></canvas>
